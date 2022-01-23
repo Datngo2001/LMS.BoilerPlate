@@ -7,12 +7,12 @@ namespace LMS.BoilerPlate.EntityFrameworkCore
     {
         public static void Configure(DbContextOptionsBuilder<BoilerPlateDbContext> builder, string connectionString)
         {
-            builder.UseSqlServer(connectionString);
+            builder.UseMySQL(connectionString);
         }
 
         public static void Configure(DbContextOptionsBuilder<BoilerPlateDbContext> builder, DbConnection connection)
         {
-            builder.UseSqlServer(connection);
+            builder.UseMySQL(connection);
         }
     }
 }
